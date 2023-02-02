@@ -1,0 +1,5 @@
+import matplotlib.pyplot as plt
+import requests
+import nltk
+from bs4 import BeautifulSoup
+import re
