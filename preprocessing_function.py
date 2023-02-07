@@ -93,3 +93,7 @@ url = 'https://www.gutenberg.org/cache/epub/2489/pg2489.txt'
 path = '/Users/renato/PycharmProjects/CLProject/corpus/'
 melville_mobydick_text = preprocessing(text_from_gutenberg(title, author, url))
 print(melville_mobydick_text)
+
+filename = f"{path}lemmatized_{title.lower().replace('-', '')}.txt"
+with open(filename, "w") as f:
+    f.write(melville_mobydick_text)
