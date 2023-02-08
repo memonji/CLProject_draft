@@ -1,0 +1,96 @@
+book_info = [
+	('melville1', 'Herman Melville', "https://www.gutenberg.org/cache/epub/2489/pg2489.txt"),
+	('melville2', 'Herman Melville', "https://www.gutenberg.org/cache/epub/2694/pg2694.txt"),
+	('melville3', 'Herman Melville', "https://www.gutenberg.org/cache/epub/4045/pg4045.txt"),
+    ('melville4', 'Herman Melville',     "https://www.gutenberg.org/cache/epub/10712/pg10712.txt",),
+    ('melville5', 'Herman Melville', "https://www.gutenberg.org/cache/epub/11231/pg11231.txt"),
+    ('melville6', 'Herman Melville', "https://www.gutenberg.org/cache/epub/34970/pg34970.txt"),
+    ('melville7', 'Herman Melville', "https://www.gutenberg.org/cache/epub/21816/pg21816.txt"),
+    ('melville8', 'Herman Melville', "https://www.gutenberg.org/cache/epub/15859/pg15859.txt"),
+    ('melville9', 'Herman Melville', "https://www.gutenberg.org/cache/epub/15422/pg15422.txt"),
+    ('melville10', 'Herman Melville', "https://www.gutenberg.org/cache/epub/13721/pg13721.txt"),
+    ('melville11', 'Herman Melville', "https://www.gutenberg.org/cache/epub/13720/pg13720.txt")
+]
+
+#Melville list: Moby Dick / I and my chimney / Omoo: Adventures in the South Seas / White-Jacket / Bartleby, The Scrivener
+# Battle-Pieces and Aspects of the War / Pierre; or The Ambiguities / The Confidence-Man / The Piazza Tales / Israel Potter
+# Mardi: and A Voyage Thither
+#%%
+book_info = [
+	('thoreau1', 'Henry David Thoreau', "https://www.gutenberg.org/cache/epub/4066/pg4066.txt"),
+	('thoreau2', 'Henry David Thoreau', "https://www.gutenberg.org/cache/epub/4232/pg4232.txt"),
+	('thoreau3', 'Henry David Thoreau', "https://www.gutenberg.org/cache/epub/9846/pg9846.txt"),
+    ('thoreau4', 'Henry David Thoreau',     "https://www.gutenberg.org/cache/epub/34990/pg34990.txt"),
+    ('thoreau5', 'Henry David Thoreau', "https://www.gutenberg.org/cache/epub/42500/pg42500.txt"),
+    ('thoreau6', 'Henry David Thoreau', "https://www.gutenberg.org/cache/epub/60951/pg60951.txt"),
+    ('thoreau7', 'Henry David Thoreau', "https://www.gutenberg.org/cache/epub/2567/pg2567.txt"),
+    ('thoreau8', 'Henry David Thoreau', "https://www.gutenberg.org/cache/epub/15859/pg15859.txt")
+]
+#%%
+book_info = [
+	('poe1', 'Edgar Allan Poe', 'https://www.gutenberg.org/cache/epub/2148/pg2148.txt'),
+	('poe2', 'Edgar Allan Poe', 'https://www.gutenberg.org/cache/epub/2147/pg2147.txt'),
+	('poe3', 'Edgar Allan Poe', 'https://www.gutenberg.org/cache/epub/17192/pg17192.txt'),
+    ('poe4', 'Edgar Allan Poe',  'https://www.gutenberg.org/cache/epub/2151/pg2151.txt'),
+    ('poe5', 'Edgar Allan Poe', 'https://www.gutenberg.org/files/2149/2149-0.txt'),
+    ('poe6', 'Edgar Allan Poe', 'https://www.gutenberg.org/files/2150/2150-0.txt'),
+    ('poe7', 'Edgar Allan Poe', 'https://www.gutenberg.org/files/32037/32037-0.txt'),
+    ('poe8', 'Edgar Allan Poe', 'https://www.gutenberg.org/cache/epub/2151/pg2151.txt')
+]
+#%%
+book_info = [
+	('hawthorne1', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/976/pg976.txt'),
+	('hawthorne2', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/1916/1916-0.txt'
+),
+	('hawthorne3', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/2081/pg2081.txt'),
+    ('hawthorne4', 'Nathaniel Hawthorne',  'https://www.gutenberg.org/files/2181/2181-0.txt'),
+    ('hawthorne5', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/2182/2182-0.txt'),
+    ('hawthorne6', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/7119/pg7119.txt'),
+    ('hawthorne7', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/7183/7183-0.txt'),
+    ('hawthorne8', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/7372/pg7372.txt'),
+    ('hawthorne9', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/7878/pg7878.txt'),
+	('hawthorne10', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/7881/pg7881.txt'
+),
+	('hawthorne11', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/8088/pg8088.txt'),
+    ('hawthorne12', 'Nathaniel Hawthorne',  'https://www.gutenberg.org/cache/epub/8090/pg8090.txt'),
+    ('hawthorne13', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/8091/8091-0.txt'),
+    ('hawthorne14', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/8429/pg8429.txt'),
+    ('hawthorne15', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9201/pg9201.txt'),
+    ('hawthorne16', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9202/pg9202.txt'),
+    ('hawthorne17', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9203/pg9203.txt'),
+	('hawthorne18', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/9204/9204-0.txt'
+),
+	('hawthorne19', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9206/pg9206.txt'),
+    ('hawthorne20', 'Nathaniel Hawthorne',  'https://www.gutenberg.org/cache/epub/9207/pg9207.txt'),
+    ('hawthorne21', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9208/pg9208.txt'),
+    ('hawthorne22', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/9213/9213-0.txt'),
+    ('hawthorne23', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/9214/9214-0.txt'),
+    ('hawthorne24', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9216/pg9216.txt'),
+    ('hawthorne25', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9216/pg9216.txt'),
+	('hawthorne26', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/9217/9217-0.txt'
+),
+	('hawthorne27', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9218/pg9218.txt'),
+    ('hawthorne28', 'Nathaniel Hawthorne',  'https://www.gutenberg.org/files/9220/9220-0.txt'),
+    ('hawthorne29', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/512/pg512.txt'),
+    ('hawthorne30', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9222/pg9222.txt'),
+    ('hawthorne31', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9236/pg9236.txt'),
+    ('hawthorne32', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9237/pg9237.txt')
+    ('hawthorne19', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9206/pg9206.txt'),
+    ('hawthorne20', 'Nathaniel Hawthorne',  'https://www.gutenberg.org/cache/epub/9207/pg9207.txt'),
+    ('hawthorne21', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9208/pg9208.txt'),
+    ('hawthorne22', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/9213/9213-0.txt'),
+    ('hawthorne23', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/9214/9214-0.txt'),
+    ('hawthorne24', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9216/pg9216.txt'),
+    ('hawthorne25', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9216/pg9216.txt'),
+	('hawthorne26', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/9217/9217-0.txt'
+),
+	('hawthorne27', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9218/pg9218.txt'),
+    ('hawthorne28', 'Nathaniel Hawthorne',  'https://www.gutenberg.org/files/9220/9220-0.txt'),
+    ('hawthorne29', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/512/pg512.txt'),
+    ('hawthorne30', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9222/pg9222.txt'),
+    ('hawthorne31', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9236/pg9236.txt'),
+    ('hawthorne32', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/9237/pg9237.txt')
+]
+
+# Hawthorne Nataniel_list: Tanglewood Tales, The Great Stone Face, and Other Tales of the White Mountains,  The Blithedale Romance, The Marble Faun; Or, The Romance of Monte Beni - Volume 1, The Marble Faun; Or, The Romance of Monte Beni - Volume 2, Fanshawe, The Dolliver Romance, Doctor Grimshawe's Secret — a Romance, Septimius Felton, or, the Elixir of Life, Passages from the English Notebooks, Complete; Passages from the French and Italian Notebooks, Complete; Passages from the American Notebooks, Volume 1; Passages from the American Notebooks, Volume 2.; Our Old Home: A Series of English Sketches; Sketches and Studies; The Ancestral Footstep (fragment) Outlines of an English Romance; various pieces from Twice Told Tales; A Rill from the Town Pump; A Select Party; various pieces from The Snow Image and Other Twice-Told Tales; A Bell's Biography; various pieces from The Doliver Romance and Other Pieces: Tales and Sketches; A Book of Autographs; various pieces from A Wonder-book for girls and boys; "Browne's Folly" (From: "The Doliver Romance and Other Pieces: Tales and Sketches"); True Stories of History and Biography; In colonial days; The House of the Seven Gables; Mosses from an old manse; Love Letters of Nathaniel Hawthorne, Volume 2 (of 2); The Scarlet Letter; The snow-image: a childish miracle;  Love Letters of Nathaniel Hawthorne, Volume 1 (of 2);
+# The Wives of the Dead
