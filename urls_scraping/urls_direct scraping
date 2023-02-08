@@ -1,4 +1,77 @@
-#FOR LISTS OF URLS
+#FOR UNIFIED LISTS OF URLS (unified_processed_texts)
+
+import urllib.request
+import re
+import string
+import nltk
+from nltk.stem import WordNetLemmatizer
+
+import urllib.request
+import re
+import string
+import nltk
+from nltk.stem import WordNetLemmatizer
+nltk.download("stopwords")
+
+def find_beginning_and_end(raw):
+    '''
+    This function serves to find the text within the raw data provided by Project Gutenberg
+    '''
+    end_regex = 'end of th(is|e) project gutenberg ebook'
+    end_position = re.search(end_regex, raw.lower())
+    if end_position:
+        text = raw[:end_position.start()]
+    else:
+        text = raw
+    return text
+
+def preprocessing(text):
+    nltk.download("stopwords")
+    stop_words = set(nltk.corpus.stopwords.words("english"))
+
+    lower_text = text.lower()
+    #punc_chars = string.punctuation + '"'
+    #no_punct_corpus = lower_text.translate(str.maketrans("", "", punc_chars))
+    no_punct_corpus = lower_text.translate(str.maketrans ("", "", string.punctuation))
+    no_number_corpus = re.sub(r'\d+', '', no_punct_corpus)
+    no_number_corpus = str(no_number_corpus)
+    tokenized_corpus = nltk.word_tokenize(no_number_corpus)
+    lemmatizer = WordNetLemmatizer()
+    first_lemmatized_corpus = " ".join(lemmatizer.lemmatize(word) for word in tokenized_corpus)
+    lemmatized_corpus = nltk.word_tokenize(first_lemmatized_corpus)
+    filtered_tokens = [word for word in lemmatized_corpus if word not in stop_words]
+    return filtered_tokens
+
+
+def process_url(url):
+    raw = urllib.request.urlopen(url).read().decode().strip()
+    text = find_beginning_and_end(raw)
+    processed_text = preprocessing(text)
+    return processed_text
+
+urls = [
+    "http://www.gutenberg.org/files/2147/2147-0.txt",
+    "http://www.gutenberg.org/files/1342/1342-0.txt",
+    "http://www.gutenberg.org/files/98/98-0.txt"
+]
+
+#for url in urls:
+#    processed_text = process_url(url)
+
+processed_texts = []
+for url in urls:
+    processed_text = process_url(url)
+    processed_texts.append(processed_text)
+    print(len(processed_text))
+
+unified_processed_text = [word for sublist in processed_texts for word in sublist]
+
+print(len(unified_processed_text))
+
+#(I've just put the print(len()) function so to be sure the code it's working)
+-------------------------------------------------------------------------------------------------------
+
+#FOR LISTS OF URLS (single pre-processed texts)
 
 import urllib.request
 import re
@@ -61,6 +134,7 @@ for url in urls:
     print(processed_text[:300])
     print("\n")
 
+-------------------------------------------------------------------------------------------------------
     
 #FOR SINGLE ITEMS (some statements are not used but better to download them before, we'll need them at some point
 
