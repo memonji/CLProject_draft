@@ -6,6 +6,13 @@ import string
 import nltk
 from nltk.stem import WordNetLemmatizer
 
+import urllib.request
+import re
+import string
+import nltk
+from nltk.stem import WordNetLemmatizer
+nltk.download("stopwords")
+
 def find_beginning_and_end(raw):
     '''
     This function serves to find the text within the raw data provided by Project Gutenberg
@@ -19,15 +26,22 @@ def find_beginning_and_end(raw):
     return text
 
 def preprocessing(text):
+    nltk.download("stopwords")
+    stop_words = set(nltk.corpus.stopwords.words("english"))
+
     lower_text = text.lower()
-    no_punct_corpus = lower_text.translate(str.maketrans("", "", string.punctuation))
+    #punc_chars = string.punctuation + '"'
+    #no_punct_corpus = lower_text.translate(str.maketrans("", "", punc_chars))
+    no_punct_corpus = lower_text.translate(str.maketrans ("", "", string.punctuation))
     no_number_corpus = re.sub(r'\d+', '', no_punct_corpus)
     no_number_corpus = str(no_number_corpus)
     tokenized_corpus = nltk.word_tokenize(no_number_corpus)
     lemmatizer = WordNetLemmatizer()
     first_lemmatized_corpus = " ".join(lemmatizer.lemmatize(word) for word in tokenized_corpus)
     lemmatized_corpus = nltk.word_tokenize(first_lemmatized_corpus)
-    return lemmatized_corpus
+    filtered_tokens = [word for word in lemmatized_corpus if word not in stop_words]
+    return filtered_tokens
+
 
 def process_url(url):
     raw = urllib.request.urlopen(url).read().decode().strip()
@@ -44,8 +58,9 @@ urls = [
 for url in urls:
     processed_text = process_url(url)
     print("Processed text from URL:", url)
-    print(processed_text[:100])
+    print(processed_text[:300])
     print("\n")
+
     
 #FOR SINGLE ITEMS (some statements are not used but better to download them before, we'll need them at some point
 
