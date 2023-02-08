@@ -1,3 +1,4 @@
+#COMPLETE LISTS OF DATA TO USE
 book_info = [
 	('hawthorne1', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/cache/epub/976/pg976.txt'),
 	('hawthorne2', 'Nathaniel Hawthorne', 'https://www.gutenberg.org/files/1916/1916-0.txt'
