@@ -1,3 +1,27 @@
+print(len(book_info))
+print(len(dick_urls))
+
+import re
+
+def substitute_urls(book_info, dick_urls):
+    new_book_info = []
+    j_index = 0
+    for b in book_info:
+        new_url = re.sub(r'https.*', dick_urls[j_index], b[2])
+        new_book_info.append((b[0], b[1], new_url))
+        j_index = (j_index + 1) % len(dick_urls)
+    return new_book_info
+
+print(substitute_urls(book_info, dick_urls))
+
+def order_book_info(book_info):
+    ordered_book_info = []
+    for i, book in enumerate(book_info):
+        ordered_book_info.append(("hawthorne" + str(i + 1).zfill(2), book[1], book[2]))
+    return ordered_book_info
+print(order_book_info(book_info))
+
+
 melville_urls = [
     "https://www.gutenberg.org/cache/epub/2489/pg2489.txt", 
     "https://www.gutenberg.org/cache/epub/2694/pg2694.txt", 
