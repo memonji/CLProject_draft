@@ -29,9 +29,10 @@ thoreau_urls = [
     "https://www.gutenberg.org/cache/epub/34990/pg34990.txt",   
     "https://www.gutenberg.org/cache/epub/42500/pg42500.txt",   
     "https://www.gutenberg.org/cache/epub/60951/pg60951.txt",   
-    "https://www.gutenberg.org/cache/epub/2567/pg2567.txt",   
-    "https://www.gutenberg.org/cache/epub/63459/pg.txt" 
+    "https://www.gutenberg.org/cache/epub/2567/pg2567.txt",    
 ]
+
+# Thoureau list: Wild Apples / A Week on the Concord and Merrimack Rivers / Excursions / Cape Cod / Canoeing in the wilderness / The Maine Woods / The Service / A Plea for Captain John Brown  
 
 poe_urls = ["https://www.gutenberg.org/cache/epub/2148/pg2148.txt",
             'https://www.gutenberg.org/cache/epub/2147/pg2147.txt',
@@ -41,6 +42,8 @@ poe_urls = ["https://www.gutenberg.org/cache/epub/2148/pg2148.txt",
             'https://www.gutenberg.org/files/2150/2150-0.txt',
             'https://www.gutenberg.org/files/32037/32037-0.txt',
             'https://www.gutenberg.org/cache/epub/2151/pg2151.txt']
+
+# Poe list: The Works of Edgar Allan Poe, Volume 2 / The Works of Edgar Allan Poe, Volume 1 / The Raven / The Works of Edgar Allan Poe, Volume 5 / The Works of Edgar Allan Poe, Volume 3 / The Works of Edgar Allan Poe, Volume 4 / Eureka: A prose poem / The Works of Edgar Allan Poe, Volume 5
 
 hawthorne_urls = ['https://www.gutenberg.org/cache/epub/976/pg976.txt',
                 'https://www.gutenberg.org/files/1916/1916-0.txt',
