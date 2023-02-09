@@ -1,7 +1,7 @@
 #Some movements have only one author as a canon within the texts we extracted from PG. Therefore, it could not be relevant. But still, we've put it in the corpus for some further evidences.
 
 #American Literature Movements
-# {American Romanticism and Naturalism: [Romanticism] Poe/Hawthorne/Melville/Emerson/Dickinson [Realism] James/Howells/Crane/Twain [Slave Narratives] Jacobs/Douglass [Regionalism] Twain  [Transcendentalism] Thoreau/Whitman [Dark Romanticism] Melville/Hawthorne [American Gothic] Poe/Irving [Fireside Poets] Bryant/Longfellow [Naturalism] Crane/London/Norris Modernism: Faulkner/Hemingway [Experimentalism] Hughes/Hurston/Fitzgerald/Hemingway [Postmodernism] Vonnegut/Dick [Harlem Renaissance] Hughes/Hurston [Lost Generation] Hemingway/Fitzgerald; [Modern American Prose] Lee [Modern American Drama] Miller [Confessional Poetry] Plath}
+# {American Romanticism and Naturalism: [Romanticism] Poe/Hawthorne/Melville/Emerson/Dickinson [Realism] James/Howells/Crane/Twain [Slave Narratives] Jacobs/Douglass [Regionalism] Twain  [Transcendentalism] Thoreau/Whitman [Dark Romanticism] Melville/Hawthorne [American Gothic] Poe/Irving [Fireside Poets] Bryant/Longfellow [Naturalism] Crane/London/Norris Modernism: Faulkner/Hemingway/Barnes [Experimentalism] Hughes/Hurston/Fitzgerald/Hemingway [Postmodernism] Vonnegut/Dick [Harlem Renaissance] Hughes/Hurston [Lost Generation] Hemingway/Fitzgerald; [Modern American Prose] Lee [Modern American Drama] Miller [Confessional Poetry] Plath}
 
 melville_urls = [
     "https://www.gutenberg.org/cache/epub/2489/pg2489.txt", 
@@ -436,6 +436,10 @@ vonnegut_urls = ['https://www.gutenberg.org/cache/epub/30240/pg30240.txt',
                 ]
 
 # Kurt Vonnegut list: 2 B R 0 2 B / The Big Trip Up Yonder
+
+barnes_urls = ['https://www.gutenberg.org/files/60904/60904-0.txt']
+
+# Djuna Barnes list: A book
 
 dick_urls = ['https://www.gutenberg.org/cache/epub/28554/pg28554.txt',
             'https://www.gutenberg.org/cache/epub/28644/pg28644.txt',
